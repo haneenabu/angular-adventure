@@ -1,0 +1,12 @@
+<div>
+  <h3>{{choiceToDisplay.end}}</h3>
+</div>
+
+<div *ngIf="secondLevelToDisplay.id===2">
+  
+  <div *ngFor="let secondlevel of secondlevels"class="panel panel-default">
+    <div class="panel-body">
+      <h3><em>{{secondlevel.title}}</em> by {{secondlevel.text}}</h3>
+    </div>
+</div>
+</div>

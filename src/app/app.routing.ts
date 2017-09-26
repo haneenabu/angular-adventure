@@ -2,8 +2,8 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent} from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
-import { MarketplaceComponent } from './marketplace/marketplace.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { FirstpageComponent } from './first-page/first-page.component';
+import { SecondPageComponent } from './second-page/second-page.component';
 
 const appRoutes: Routes = [
   {
@@ -15,12 +15,12 @@ const appRoutes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'marketplace',
-    component: MarketplaceComponent
+    path: 'first-page',
+    component: FirstpageComponent
   },
   {
-   path: 'albums/:id',
-   component: AlbumDetailComponent
+   path: 'second-page/:id',
+   component: SecondPageComponent
  }
 ];
 

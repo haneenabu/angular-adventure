@@ -1,0 +1,7 @@
+<h2>Start the Story</h2>
+
+<div *ngFor="let choice of choices" (click)="goToNextLevelPage(choice)"class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{choice.title}}</em> by {{choice.text}}</h3>
+  </div>
+</div>
